@@ -1,0 +1,52 @@
+2023-10-15T02:12:39+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\API\OnboardingPlugins::install_plugin() in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Internal\Admin\Notes\InstallJPAndWCSPlugins.php:120
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Internal\Admin\Notes\InstallJPAndWCSPlugins.php(108): Automattic\WooCommerce\Internal\Admin\Notes\InstallJPAndWCSPlugins->install_and_activate_plugin('jetpack')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): Automattic\WooCommerce\Internal\Admin\Notes\InstallJPAndWCSPlugins->install_jp_and_wcs_plugins(Object(Automattic\WooCommerce\Admin\Notes\Note))
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Admin\Notes\Notes.php(367): do_action('woocommerce_not...', Object(Automattic\WooCommerce\Admin\Notes\Note))
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Admin\API\NoteActions.php(82): Automattic\WooCommerce\Admin\Notes\Notes::trigger_note_action(Object(Automattic\WooCommerce\Admin\Notes\Note), Object(stdClass))
+#6 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(1194): Automattic\WooCommerce\Admin\API\NoteActions->trigger_note_action(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-analytics/a...', Array, NULL)
+#8 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wordpress\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wc-analytics/a...')
+#10 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wordpress\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wordpress\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wordpress\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wordpress\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Internal\Admin\Notes\InstallJPAndWCSPlugins.php en la línea 120
+
+2023-10-15T02:16:55+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\API\OnboardingPlugins::install_plugin() in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Internal\Admin\Notes\InstallJPAndWCSPlugins.php:120
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Internal\Admin\Notes\InstallJPAndWCSPlugins.php(108): Automattic\WooCommerce\Internal\Admin\Notes\InstallJPAndWCSPlugins->install_and_activate_plugin('jetpack')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): Automattic\WooCommerce\Internal\Admin\Notes\InstallJPAndWCSPlugins->install_jp_and_wcs_plugins(Object(Automattic\WooCommerce\Admin\Notes\Note))
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Admin\Notes\Notes.php(367): do_action('woocommerce_not...', Object(Automattic\WooCommerce\Admin\Notes\Note))
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Admin\API\NoteActions.php(82): Automattic\WooCommerce\Admin\Notes\Notes::trigger_note_action(Object(Automattic\WooCommerce\Admin\Notes\Note), Object(stdClass))
+#6 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(1194): Automattic\WooCommerce\Admin\API\NoteActions->trigger_note_action(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-analytics/a...', Array, NULL)
+#8 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wordpress\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wc-analytics/a...')
+#10 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wordpress\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wordpress\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wordpress\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wordpress\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\src\Internal\Admin\Notes\InstallJPAndWCSPlugins.php en la línea 120
+
+2023-10-15T02:30:35+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\wordpress\wp-content\plugins\astra-sites\admin\bsf-analytics\class-bsf-analytics.php en la línea 10
+
+2023-10-15T02:30:36+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\wordpress\wp-includes\functions.php en la línea 2185
+
+2023-10-15T02:30:42+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\wordpress\wp-includes\functions.php en la línea 6691
+
